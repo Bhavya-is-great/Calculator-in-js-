@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <main>
+        <div id="calc" align="center">
+            <label for="firstnum">First number</label>
+            <input type="number" id="firstnum" required>
+            <label for="secondnum">second number</label>
+            <input type="number" id="secondnum" required>
+
+            <table>
+                <td><button onclick="return add()">Add</button>
+                    <button onclick="return sub()">substract</button>
+                    <button onclick="return mul()">multiply</button>
+                    <button onclick="return divide()">divide</button>
+                    <button onclick="return power()">x<sup>y</sup></button>
+                    <button onclick="return root()">y<bold>&radic;</bold>x</button>   
+                </td>
+            </table>
+        </div>
+        <div id="position">
+            <p id="text">The answer appears Below:-</p>
+            <p id="answer"></p>
+        </div>
+    </main>
+    <footer>
+        <sub>
+            The code for above is uploaded on github click <a href="http://">git</a> to get the code
+        </sub>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
